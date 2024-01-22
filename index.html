@@ -1,250 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/flickity.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="flickity.pkgd.min.js" defer></script>
+    <script src="owl.carousel.min.js" defer></script>
     <script src="index.js" defer></script>
     <title>Midas2</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="wrap-promo">
-        <div class="promo-top">
-          <div class="promo-content">
-            <span class="promo-text"
-              >FREE SHIPPING FOR ALL ORDERS OVER $50</span
-            >
-            <span class="close">&times;</span>
-          </div>
+        <div class="wrap-promo">
+            <div class="promo-top">
+                <div class="promo-content">
+                    <span class="promo-text">FREE SHIPPING FOR ALL ORDERS OVER $50</span>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="wrap-header">
-        <div class="wrap-header-content">
-          <div class="header-content">
-            <div class="wrap_tel header_layout">
-              <a href="#" class="header-content-tel"
-                ><i class="fa-solid fa-phone"></i
-                ><span class="tel">Call: +0123 456 789</span></a
-              >
-            </div>
-            <div class="header__content-logo header_layout">
-              <a href="#"
-                ><img src="./assets/images/logo.png" alt="site logo"
-              /></a>
-              <h4 class="site-text-logo">midas</h4>
-            </div>
-            <div class="header__content-menu header_layout">
-              <div class="sub_menu">
-                <div class="sub_menu_item">
-                  <a href="#">
-                    <img
-                      class="sub_menu_item--user_login_icon"
-                      src="./assets/images/user.svg"
-                      alt="user"
-                    />
-                    <span class="user_login">Login</span></a
-                  >
+        <div class="wrap-header">
+            <div class="wrap-header-content">
+                <div class="header-content">
+                    <div class="wrap_tel header_layout">
+                        <a href="#" class="header-content-tel fkt-phone"><span class="tel">Call:
+                                +0123 456 789</span></a>
+                    </div>
+                    <div class="header__content-logo header_layout">
+                        <a href="#"><img src="./assets/images/logo.png" alt="site logo" /></a>
+                        <h4 class="site-text-logo">midas</h4>
+                    </div>
+                    <div class="header__content-menu header_layout">
+                        <div class="sub_menu">
+                            <div class="sub_menu_item">
+                                <a href="#">
+                                    <img class="sub_menu_item--user_login_icon" src="./assets/images/user.svg"
+                                        alt="user" />
+                                    <span class="user_login">Login</span></a>
+                            </div>
+                            <div class="sub_menu_item dropdown">
+                                <a href="#"><span class="sub_menu_content">USD</span><i class="fa fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown_item">VND</div>
+                                    <div class="dropdown_item">USD</div>
+                                    <div class="dropdown_item">RUB</div>
+                                    <div class="dropdown_item">JPY</div>
+                                </div>
+                            </div>
+                            <div class="sub_menu_item dropdown">
+                                <a href="#"><span class="sub_menu_content">Eng</span><i class="fa fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown_item">Vietnamese</div>
+                                    <div class="dropdown_item">English</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sub_menu_item dropdown">
-                  <a href="#"
-                    ><span class="sub_menu_content">USD</span
-                    ><i class="fa fa-angle-down" aria-hidden="true"></i
-                  ></a>
-                  <div class="dropdown-content">
-                    <div class="dropdown_item">VND</div>
-                    <div class="dropdown_item">USD</div>
-                    <div class="dropdown_item">RUB</div>
-                    <div class="dropdown_item">JPY</div>
-                  </div>
-                </div>
-                <div class="sub_menu_item dropdown">
-                  <a href="#"
-                    ><span class="sub_menu_content">Eng</span
-                    ><i class="fa fa-angle-down" aria-hidden="true"></i
-                  ></a>
-                  <div class="dropdown-content">
-                    <div class="dropdown_item">Vietnamese</div>
-                    <div class="dropdown_item">English</div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="wrap-main-menu">
-        <div class="wrap-menu">
-          <div class="main-menu">
-            <div id="site_nav">
-              <ul class="nav">
-                <li class="dropdown_hover active dropdown">
-                  <a class="menu_content" href="#"
-                    >HOME<i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </a>
-                  <div class="dropdown-content">
-                    <div class="dropdown_item">Molla</div>
-                    <div class="dropdown_item">Flatsome</div>
-                    <div class="dropdown_item">Avada</div>
-                  </div>
-                </li>
-                <li class="dropdown_hover dropdown">
-                  <a class="menu_content" href="#"
-                    >SHOP<i class="fa fa-angle-down" aria-hidden="true"></i
-                  ></a>
-                  <div class="dropdown-content">
-                    <div class="dropdown_item">Shop 1</div>
-                    <div class="dropdown_item">Shop 2</div>
-                    <div class="dropdown_item">Shop 3</div>
-                  </div>
-                </li>
-                <li class="dropdown_hover dropdown">
-                  <a class="menu_content" href="#"
-                    >PRODUCT<i class="fa fa-angle-down" aria-hidden="true"></i
-                  ></a>
-                  <div class="dropdown-content">
-                    <div class="dropdown_item">SHOES</div>
-                    <div class="dropdown_item">CLOTHING</div>
-                    <div class="dropdown_item">HANDBAGS</div>
-                  </div>
-                </li>
-                <li class="dropdown_hover dropdown">
-                  <a class="menu_content" href="#"
-                    >PAGES<i class="fa fa-angle-down" aria-hidden="true"></i
-                  ></a>
-                  <div class="dropdown-content">
-                    <div class="dropdown_item">Page 1</div>
-                    <div class="dropdown_item">Page 2</div>
-                    <div class="dropdown_item">Page 3</div>
-                  </div>
-                </li>
-                <li class="dropdown_hover">
-                  <a class="menu_content" href="#">BLOG</a>
-                </li>
-                <li class="dropdown_hover">
-                  <a class="menu_content" href="#">ELEMENTS</a>
-                </li>
-              </ul>
-            </div>
-            <div class="header__icons">
-              <div class="wrap_search">
-                <input
-                  type="text"
-                  id="search_input"
-                  placeholder="Search in..."
-                />
-                <a href="#" class="search_icon_btn">
-                  <span class="header__icons--search search_icon">
-                    <img
-                      class="svg_icon"
-                      src="./assets/images/search.svg"
-                      alt="search"
-                    />
-                  </span>
-                </a>
-              </div>
-              <a href="#">
-                <span class="header__icons--compare icon"
-                  ><img class="svg_icon" src="./assets/images/compare.svg"
-                /></span>
-              </a>
+        <div class="wrap-main-menu">
+            <div class="wrap-menu">
+                <div class="main-menu">
+                    <div id="site_nav">
+                        <ul class="nav">
+                            <li class="dropdown_hover active dropdown">
+                                <a class="menu_content" href="#">HOME<i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown_item">Molla</div>
+                                    <div class="dropdown_item">Flatsome</div>
+                                    <div class="dropdown_item">Avada</div>
+                                </div>
+                            </li>
+                            <li class="dropdown_hover dropdown">
+                                <a class="menu_content" href="#">SHOP<i class="fa fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown_item">Shop 1</div>
+                                    <div class="dropdown_item">Shop 2</div>
+                                    <div class="dropdown_item">Shop 3</div>
+                                </div>
+                            </li>
+                            <li class="dropdown_hover dropdown">
+                                <a class="menu_content" href="#">PRODUCT<i class="fa fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown_item">SHOES</div>
+                                    <div class="dropdown_item">CLOTHING</div>
+                                    <div class="dropdown_item">HANDBAGS</div>
+                                </div>
+                            </li>
+                            <li class="dropdown_hover dropdown">
+                                <a class="menu_content" href="#">PAGES<i class="fa fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                <div class="dropdown-content">
+                                    <div class="dropdown_item">Page 1</div>
+                                    <div class="dropdown_item">Page 2</div>
+                                    <div class="dropdown_item">Page 3</div>
+                                </div>
+                            </li>
+                            <li class="dropdown_hover">
+                                <a class="menu_content" href="#">BLOG</a>
+                            </li>
+                            <li class="dropdown_hover">
+                                <a class="menu_content" href="#">ELEMENTS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__icons">
+                        <div class="wrap_search">
+                            <input type="text" id="search_input" placeholder="Search in..." />
+                            <a href="#" class="search_icon_btn">
+                                <span class="header__icons--search search_icon">
+                                    <img class="svg_icon" src="./assets/images/search.svg" alt="search" />
+                                </span>
+                            </a>
+                        </div>
+                        <a href="#">
+                            <span class="header__icons--compare icon"><img class="svg_icon"
+                                    src="./assets/images/compare.svg" /></span>
+                        </a>
 
-              <a href="#">
-                <span class="header__icons--heart icon"
-                  ><img
-                    class="svg_icon"
-                    src="./assets/images/heart.svg"
-                    alt="heart"
-                  /><span class="circle"><span class="cartCount">0</span></span>
-                </span>
-              </a>
-              <a href="#">
-                <span class="header__icons--cart icon"
-                  ><img
-                    class="svg_icon"
-                    src="./assets/images/cart.svg"
-                    alt="cart"
-                  /><span class="circle"><span class="cartCount">0</span></span>
-                </span>
-              </a>
+                        <a href="#">
+                            <span class="header__icons--heart icon"><img class="svg_icon"
+                                    src="./assets/images/heart.svg" alt="heart" /><span class="circle"><span
+                                        class="cartCount">0</span></span>
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="header__icons--cart icon"><img class="svg_icon" src="./assets/images/cart.svg"
+                                    alt="cart" /><span class="circle"><span class="cartCount">0</span></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </header>
     <div class="services_container center-content full-width">
-      <div class="container">
-        <div class="list_service">
-          <div class="service_item free_shipping">
-            <div class="wrap_banner_icon">
-              <i class="fa-sharp fa-solid fa-rocket fa-2x"></i>
-              <div class="banner_icon_content">
-                <div class="item_title">Free Shipping</div>
-                <div class="item_subtitle">Oder $50 or more</div>
-              </div>
+        <div class="container">
+            <div class="list_service">
+                <div class="service_item free_shipping">
+                    <div class="wrap_banner_icon">
+                        <i class="fa-sharp fa-solid fa-rocket fa-2x"></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">Free Shipping</div>
+                            <div class="item_subtitle">Oder $50 or more</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service_item free_returns">
+                    <div class="wrap_banner_icon">
+                        <i class="fa-solid fa-arrow-rotate-left fa-2x"></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">Free Returns</div>
+                            <div class="item_subtitle">Winthin 30 days</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service_item get_sale">
+                    <div class="wrap_banner_icon">
+                        <i class="fa-solid fa-circle-info fa-2x"></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">Get 20% Off 1 Item</div>
+                            <div class="item_subtitle">When you sign up</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service_item support">
+                    <div class="wrap_banner_icon">
+                        <i class="fa-solid fa-life-ring fa-2x"></i>
+                        <div class="banner_icon_content">
+                            <div class="item_title">We Support</div>
+                            <div class="item_subtitle">24/7 amazing services</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="service_item free_returns">
-            <div class="wrap_banner_icon">
-              <i class="fa-solid fa-arrow-rotate-left fa-2x"></i>
-              <div class="banner_icon_content">
-                <div class="item_title">Free Returns</div>
-                <div class="item_subtitle">Winthin 30 days</div>
-              </div>
-            </div>
-          </div>
-          <div class="service_item get_sale">
-            <div class="wrap_banner_icon">
-              <i class="fa-solid fa-circle-info fa-2x"></i>
-              <div class="banner_icon_content">
-                <div class="item_title">Get 20% Off 1 Item</div>
-                <div class="item_subtitle">When you sign up</div>
-              </div>
-            </div>
-          </div>
-          <div class="service_item support">
-            <div class="wrap_banner_icon">
-              <i class="fa-solid fa-life-ring fa-2x"></i>
-              <div class="banner_icon_content">
-                <div class="item_title">We Support</div>
-                <div class="item_subtitle">24/7 amazing services</div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="slider-banner-container center-content full-width">
-      <div class="wrap-slider-banner slideshow-container">
-        <div
-          class="gallery js-flickity"
-          data-flickity-options='{ "wrapAround": true }'
-        >
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
+    <div class="slider-banner-container center-content">
+        <div class="ddd">
+            <div class="wrap-slider-banner container">
+                <div class="owl-carousel owl-theme">
+                    <div class="carousel-cell"><img src="assets/images/banner-1.jpg" alt="">
+                        <div class="banner-text"><span class="banner-top-title">New Collection</span>
+                            <span class="banner-content-title">Women's <br>
+                                Sportswear & Joggers</span>
+                            <span class="banner-end-title">2019</span>
+                            <a href="#" class="banner-btn">Discover Now <i class="icon fkt-long-arrow-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="carousel-cell"><img src="assets/images/banner-2.jpg" alt="">
+                        <div class="banner-text"><span class="banner-top-title">New Collection</span>
+                            <span class="banner-content-title">Women's Sportswear & Joggers</span>
+                            <span class="banner-end-title">2019</span>
+                            <a href="#" class="banner-btn">Discover Now <i class="icon fkt-long-arrow-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="carousel-cell"><img src="assets/images/banner-3.jpg" alt="">
+                        <div class="banner-text"><span class="banner-top-title">New Collection</span>
+                            <span class="banner-content-title">Women's Sportswear & Joggers</span>
+                            <span class="banner-end-title">2019</span>
+                            <a href="#" class="banner-btn">Discover Now <i class="icon fkt-long-arrow-right"></i></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <div class="slider-brand-container center-content full-width">
-      <div class="wrap-slider-brand slideshow-container">
-        <!-- Full-width images with number and caption text -->
-      </div>
+        <div class="wrap-slider-brand slideshow-container">
+        </div>
     </div>
-  </body>
+</body>
+
 </html>

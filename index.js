@@ -1,5 +1,12 @@
 "use strict";
 $(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    navigation : true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    items : 1, 
+})
   $(".dropdown").on("click", function () {
     var dropdownContent = $(this).find(".dropdown-content");
     $(".dropdown-content").not(dropdownContent).removeClass("show");

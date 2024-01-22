@@ -1,8 +1,8 @@
+@import '../webfonts/molla-icon.css';
 * {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  box-sizing: border-box;
 }
 
 .full-width {
@@ -366,6 +366,11 @@
   color: #999999;
 }
 
+.slider-banner-container .wrap-slider-banner {
+  height: 500px;
+  width: 100%;
+}
+
 .slider-brand-container .wrap-slider-brand {
   height: 150px;
   background-color: #6b89eb;
@@ -373,32 +378,70 @@
   width: 100%;
 }
 
-* {
-  box-sizing: border-box;
+.owl-carousel .owl-stage-outer {
+  overflow: unset;
 }
-
-body {
-  font-family: sans-serif;
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell {
+  height: 500px;
 }
-
-.gallery {
-  background: #EEE;
-}
-
-.gallery-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  counter-increment: gallery-cell;
-}
-
-/* cell number */
-.gallery-cell:before {
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell img {
   display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+  height: inherit;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 19.5%;
+  left: 14.5%;
+  max-width: 730px;
+  width: 100%;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-top-title {
   color: white;
+  font-weight: 300;
+  font-size: 24px;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-content-title {
+  font-weight: 600;
+  color: white;
+  font-size: 60px;
+  letter-spacing: -0.04rem;
+  margin-bottom: 5px;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-end-title {
+  font-weight: 200;
+  color: white;
+  font-size: 60px;
+  letter-spacing: -0.04rem;
+  margin-bottom: 15px;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-btn {
+  display: block;
+  background-color: #1cc0a0;
+  max-width: 200px;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-btn .icon {
+  display: none;
+  margin-left: 20px;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-btn:hover {
+  background-color: #23aa90;
+}
+.owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-btn:hover .icon {
+  display: inline;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@import '../webfonts/molla-icon.css';
 $primary-color: #29c4a6;
 $color-gray: #999999;
 
@@ -5,8 +6,6 @@ $color-gray: #999999;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 // Full width
@@ -470,9 +469,12 @@ $color-gray: #999999;
 
 }
 
-// .slider-banner-container {
-//     .wrap-slider-banner {}
-// }
+.slider-banner-container {
+    .wrap-slider-banner {
+        height: 500px;
+        width: 100%;
+    }
+}
 
 .slider-brand-container {
     .wrap-slider-brand {
@@ -484,31 +486,89 @@ $color-gray: #999999;
 }
 
 //Slider 
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  body { font-family: sans-serif; }
-  
-  .gallery {
-    background: #EEE;
-  }
-  
-  .gallery-cell {
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    counter-increment: gallery-cell;
-  }
-  
-  /* cell number */
-  .gallery-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-  }
+// .ddd{
+//     width: 100vw;
+//     overflow: hidden;
+// }
+.owl-carousel {
+    .owl-stage-outer {
+        overflow: unset;
+        .owl-item {
+            .carousel-cell {
+                height: 500px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center top;
+                    height: inherit;
+                }
+
+                .banner-text {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 19.5%;
+                    left: 14.5%;
+                    max-width: 730px;
+                    width: 100%;
+
+                    .banner-top-title {
+                        color: white;
+                        font-weight: 300;
+                        font-size: 24px;
+                    }
+
+                    .banner-content-title {
+                        font-weight: 600;
+                        color: white;
+                        font-size: 60px;
+                        letter-spacing: -0.04rem;
+                        margin-bottom: 5px;
+                    }
+
+                    .banner-end-title {
+                        font-weight: 200;
+                        color: white;
+                        font-size: 60px;
+                        letter-spacing: -0.04rem;
+                        margin-bottom: 15px;
+
+                    }
+
+                    .banner-btn {
+                        display: block;
+                        background-color: #1cc0a0;
+                        max-width: 200px;
+                        width: 100%;
+                        height: 46px;
+                        line-height: 46px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: -0.04rem;
+
+                        .icon {
+                            display: none;
+                            margin-left: 20px;
+                        }
+
+                        &:hover {
+                            background-color: #23aa90;
+
+                            .icon {
+                                display: inline;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+}

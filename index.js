@@ -1,12 +1,27 @@
 "use strict";
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    navigation : true,
-    slideSpeed : 300,
-    paginationSpeed : 400,
-    items : 1, 
-})
+  $(".owl-carousel.banner").owlCarousel({
+    loop: true,
+    navigation: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    items: 1,
+    nav: true,
+    dots: false,
+    autoplayTimeout: 8000,
+    autoplay:true
+  });
+  $(".owl-carousel.brand").owlCarousel({
+    loop: true,
+    navigation: true,
+    slideSpeed: 300,
+    paginationSpeed: 400,
+    items: 6,
+    nav: true,
+    dots: false,
+    autoplayTimeout: 3000,
+    autoplay:true
+  });
   $(".dropdown").on("click", function () {
     var dropdownContent = $(this).find(".dropdown-content");
     $(".dropdown-content").not(dropdownContent).removeClass("show");

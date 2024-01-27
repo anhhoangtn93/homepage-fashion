@@ -6,6 +6,7 @@ $color-gray: #999999;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    box-sizing: border-box;
 }
 
 // Full width
@@ -16,7 +17,7 @@ $color-gray: #999999;
 // set max-width
 .container {
     padding: 0 15px;
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -25,7 +26,6 @@ $color-gray: #999999;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 //Dropdown
@@ -62,7 +62,7 @@ $color-gray: #999999;
 
     .promo-top {
         padding: 0 15px;
-        max-width: 1170px;
+        max-width: 1200px;
         width: 100%;
 
         .promo-content {
@@ -101,7 +101,7 @@ $color-gray: #999999;
 
     .wrap-header-content {
         padding: 0 15px;
-        max-width: 1170px;
+        max-width: 1200px;
         width: 100%;
 
         .header-content {
@@ -207,7 +207,7 @@ $color-gray: #999999;
 
     .wrap-menu {
         padding: 0 15px;
-        max-width: 1170px;
+        max-width: 1200px;
         width: 100%;
 
         .main-menu {
@@ -641,7 +641,7 @@ $color-gray: #999999;
 
 .slider-brand-container {
     .wrap-slider-brand {
-        height: 150px;
+        height: 148px;
         background-color: #ffffff;
         max-width: 1170px;
         width: 100%;
@@ -649,10 +649,10 @@ $color-gray: #999999;
         .owl-stage-outer {
             .owl-item {
                 .carousel-cell {
-                    padding: 0 30px;
+                    padding: 0 45px;
 
                     img {
-                        height: 150px;
+                        height: 148px;
                         object-position: center center;
                         object-fit: contain;
                     }
@@ -699,20 +699,173 @@ $color-gray: #999999;
         width: 100%;
         justify-content: space-between;
 
+        .banners-set-content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            padding: 0 50px;
+            width: 100%;
+
+            .banners-set-title {
+                color: white;
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+
+            .banners-set-content-title {
+                color: white;
+                font-weight: 600;
+                font-size: 24px;
+                letter-spacing: -0.04rem;
+                line-height: 24px;
+                margin-bottom: 8px;
+
+
+            }
+
+            .banners-set-end-title {
+                color: white;
+                font-weight: 200;
+                font-size: 24px;
+                line-height: 24px;
+                margin-bottom: 14px;
+            }
+
+            .banners-set-btn {
+                display: block;
+                background-color: transparent;
+                max-width: 125px;
+                width: 100%;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: -0.04rem;
+                border: 1px solid white;
+                text-transform: uppercase;
+                
+            }
+        }
+
+
         .col {
-            
+            position: relative;
+            overflow: hidden;
+
             width: calc(33.33333% - 13.333px);
 
             img {
                 width: 100%;
-                max-height: 500px;
             }
 
-            &.col1, &.col3 {
-                position: relative;
+            &.col1,
+            &.col3 {
+                height: 500px;
+
+                img {
+                    height: 500px;
+                    object-fit: cover;
+                }
+
                 .banners-set-content {
-                    position: absolute;
-                    top: 10%;
+
+                    top: 62%;
+
+                }
+            }
+
+            &.col1 {
+                img {
+                    transform: scale(1.8);
+                    transform-origin: 16% 30%;
+                }
+            }
+
+            &.col3 {
+                img {
+                    transform: scale(1.2);
+                    transform-origin: 40% 55%;
+                }
+            }
+
+            &.col2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 500px;
+
+                .row {
+                    position: relative;
+                    width: 100%;
+                    height: calc(100% / 2 - 10px);
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+
+                    .banners-set-content {
+                        top: 22.5%;
+                        width: 75%;
+                        .banners-set-title {}
+
+                        .banners-set-content-title {
+                            margin-bottom: 16px;
+                        }
+
+                        .banners-set-btn {
+                            width: 100%;
+                            max-width: 300px;
+                        }
+                    }
+
+                    &.row1 {
+                        background-color: #3e4245;
+
+                        img {
+                            height: 100%;
+                            transform: scale(2.2);
+                            transform-origin: center 80%;
+
+                        }
+                        .banners-set-content {
+
+                            .banners-set-content-title {
+                                margin-bottom: 16px;
+                                line-height: 28px;
+                            }
+    
+                            .banners-set-btn {
+                                width: 100%;
+                                max-width: 300px;
+                            }
+                        }
+                    }
+
+                    &.row2 {
+                        background-color: #a15648;
+
+                        img {
+                            height: 100%;
+                            transform: scale(4.5);
+                            transform-origin: 48% 8%;
+                        }
+
+                        .banners-set-content {
+                            top: 29%;
+                            .banners-set-title {}
+
+                            .banners-set-content-title {
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
                 }
             }
         }

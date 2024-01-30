@@ -30,6 +30,7 @@ $(document).ready(function () {
     items: 4,
     nav: true,
     dots: false,
+    margin:20,
   });
   $(".dropdown").on("click", function () {
     var dropdownContent = $(this).find(".dropdown-content");

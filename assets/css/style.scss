@@ -942,6 +942,7 @@ $color-gray: #999999;
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        object-position: center;
                     }
                 }
 
@@ -967,15 +968,52 @@ $color-gray: #999999;
 
                 }
 
-                .product_badge {
+                .product_badges {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
                     align-items: start;
                     position: absolute;
                     z-index: 99;
-                    top: 10%;
-                    left: 10%;
+                    top: 6%;
+                    left: 6%;
+
+                    .badge {
+                        display: none;
+                        padding: 0.571rem 0.714rem;
+                        background-color: $primary-color;
+                        color: #ffffff;
+                        margin-bottom: 0.357rem;
+                        font-size: 13px;
+                        vertical-align: middle;
+                        text-align: center;
+                        text-wrap: nowrap;
+                        text-overflow: ellipsis;
+                        width: fit-content;
+                        user-select: none;
+
+                        &.active {
+                            display: block;
+                        }
+
+
+                        &.new {
+                            background-color: $primary-color;
+                        }
+
+                        &.sale {
+                            background-color: $primary-color;
+                        }
+
+                        &.sale-off {
+                            background-color: #ef837b;
+                        }
+
+                        &.out-of-stock {
+                            background-color: #cccccc;
+                        }
+
+                    }
                 }
             }
 
@@ -1014,7 +1052,6 @@ $color-gray: #999999;
                     flex-direction: row;
                     justify-content: start;
                     align-items: center;
-                    margin: 0;
                     white-space: nowrap;
                     line-height: 1;
                     max-width: 100%;
@@ -1022,10 +1059,13 @@ $color-gray: #999999;
                     overflow: hidden;
                     color: #ccc;
                     text-overflow: ellipsis;
-                    margin-top: 15px;
+                    margin: 1rem 0 0 0;
+
 
                     .ratings-star {
                         position: relative;
+                        margin: 0 0.5rem 0 0;
+
 
                         .icon {
                             padding: 0;
@@ -1037,9 +1077,49 @@ $color-gray: #999999;
                             position: absolute;
                             top: 0;
                             left: 0;
-                            color: gold;
+                            color: #fcb941;
                             overflow: hidden;
-                            width: 90%;
+                            width: 0;
+
+                            &.star-0-5 {
+                                width: 10%;
+                            }
+
+                            &.star-1-0 {
+                                width: 20%;
+                            }
+
+                            &.star-1-5 {
+                                width: 30%;
+                            }
+
+                            &.star-2-0 {
+                                width: 40%;
+                            }
+
+                            &.star-2-5 {
+                                width: 50%;
+                            }
+
+                            &.star-3-0 {
+                                width: 60%;
+                            }
+
+                            &.star-3-5 {
+                                width: 70%;
+                            }
+
+                            &.star-4-0 {
+                                width: 80%;
+                            }
+
+                            &.star-4-5 {
+                                width: 90%;
+                            }
+
+                            &.star-5-0 {
+                                width: 100%;
+                            }
 
                             .icon {
                                 padding: 0;
@@ -1069,14 +1149,31 @@ $color-gray: #999999;
                         margin: 0.3rem;
                         transition: box-shadow 0.3s ease, opacity 0.3s;
 
+                        &.brown {
+                            background-color: #b87145;
+                        }
+
+                        &.black {
+                            background-color: #000000;
+                        }
+
+                        &.brown-gray {
+                            background-color: #6b5f3f;
+                        }
+
                         &.yellow {
                             background-color: #e5dcb1;
 
                         }
 
                         &.light_blue {
-                            background-color: #bacbd8;
+                            background-color: #72a6d8;
                         }
+
+                        &.gray {
+                            background-color: #464646;
+                        }
+
 
                         &:hover {
                             box-shadow: 0 0 0 0.1rem #cccccc;
@@ -1202,17 +1299,19 @@ $color-gray: #999999;
 
                     .product_price_sale {
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         justify-content: center;
                         align-items: flex-start;
 
 
                         .now_price {
                             color: #f19791;
+                            margin-right: .5rem;
                         }
 
                         .before_sale {
-                            color: $color-gray;
+                            text-decoration: line-through;
+                            color: #cccccc;
                         }
                     }
                 }
@@ -1293,6 +1392,7 @@ $color-gray: #999999;
         }
     }
 }
-.footer{
+
+.footer {
     margin-top: 100px;
 }

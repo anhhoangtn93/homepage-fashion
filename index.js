@@ -1,36 +1,33 @@
 "use strict";
 $(document).ready(function () {
-  $(".owl-carousel.banner").owlCarousel({
-    loop: true,
-    navigation: true,
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    items: 1,
-    nav: true,
-    dots: false,
-    autoplayTimeout: 8000,
-    autoplay: true,
-  });
-  $(".owl-carousel.brand").owlCarousel({
-    loop: true,
-    navigation: true,
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    items: 6,
-    nav: true,
-    dots: false,
-    autoplayTimeout: 3000,
-    autoplay: true,
-  });
-  $(".owl-carousel.trending").owlCarousel({
-    loop: true,
-    navigation: true,
-    slideSpeed: 300,
-    paginationSpeed: 400,
+  const initOwlCarousel = (selector, options) => {
+    $(selector).owlCarousel(
+      $.extend(
+        {
+          loop: true,
+          navigation: true,
+          slideSpeed: 300,
+          paginationSpeed: 400,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 5000,
+        },
+        options
+      )
+    );
+  };
+  initOwlCarousel(".owl-carousel.banner", { items: 1, autoplayTimeout: 8000 });
+  initOwlCarousel(".owl-carousel.brand", { items: 6, autoplayTimeout: 3000 });
+  initOwlCarousel(".owl-carousel.four-item", {
     items: 4,
-    nav: true,
-    dots: false,
-    margin:20,
+    margin: 20,
+    autoplay: false,
+  });
+  initOwlCarousel(".owl-carousel.three-item", {
+    items: 3,
+    margin: 20,
+    autoplay: false,
   });
   $(".dropdown").on("click", function () {
     var dropdownContent = $(this).find(".dropdown-content");
@@ -50,5 +47,25 @@ $(document).ready(function () {
   //close promo
   $(".wrap-promo .close").click(() => {
     $(".wrap-promo").hide();
+  });
+  //handle tab
+  $(".tab").on("click", function () {
+    let _this = this;
+    let container = _this.closest(".container");
+    let index = $(_this).index();
+    let carousels = $(container).find(".owl-carousel");
+
+    $(container).find(".tab.active").removeClass("active");
+    $(_this).addClass("active");
+    $(carousels).removeClass("active-tab");
+    $(carousels).eq(index).addClass("active-tab");
+  });
+  //Product colors
+  $(".color").on("click", function() {
+    
+    let _this = this;
+    let wrap = _this.closest(".product_color");
+    $(wrap).find(".color.active").removeClass("active");
+    $(_this).addClass("active");
   });
 });

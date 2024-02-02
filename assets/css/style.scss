@@ -892,10 +892,55 @@ $color-gray: #999999;
     }
 }
 
-.trending-container {
+.product-container {
     .container {
         padding-bottom: 50px;
         border-bottom: 1px solid #e9e9e9;
+
+
+        .content-container {
+            display: flex;
+            flex-direction: row;
+
+            .wrap-featured-product {
+                flex: 0 0 25%;
+
+                .featured-product {
+                    width: calc(100% - 20px);
+                }
+            }
+
+            .wrap-carousel {
+                flex: 1;
+                overflow: hidden;
+                transition: all 0.3s ease;
+
+                .owl-carousel {
+                    display: block;
+                    position: relative;
+                    visibility: hidden;
+                    height: 0;
+                    overflow: hidden;
+                    opacity: 0;
+                    top: 15px;
+                    transition: all 0.3s ease;
+
+
+                    &.active-tab {
+                        opacity: 1;
+                        height: auto;
+                        visibility: visible;
+                        display: block;
+                        position: relative;
+                        top: 0;
+                        transition: opacity 0.3s, visibility 0.3s, top 0.3s;
+                    }
+                }
+            }
+
+
+        }
+
 
         .product {
             position: relative;
@@ -1140,7 +1185,7 @@ $color-gray: #999999;
                 .product_color {
                     margin-top: 15px;
 
-                    .thumb-color {
+                    .color {
 
                         width: 15px;
                         height: 15px;
@@ -1338,7 +1383,7 @@ $color-gray: #999999;
 
     }
 
-    .tab {
+    .tabs {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1346,7 +1391,7 @@ $color-gray: #999999;
         text-transform: uppercase;
 
 
-        .first-tab {
+        .tab-1 {
             font-size: 14px;
             font-weight: 400;
             text-align: center;
@@ -1368,7 +1413,7 @@ $color-gray: #999999;
             }
         }
 
-        .second-tab {
+        .tab-2 {
             font-size: 14px;
             font-weight: 400;
             text-align: center;

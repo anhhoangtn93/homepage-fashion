@@ -29,6 +29,12 @@ $(document).ready(function () {
     margin: 20,
     autoplay: false,
   });
+  initOwlCarousel(".owl-carousel.six-item", {
+    loop: true,
+    items: 6,
+    margin: 0,
+    autoplay: false,
+  });
   $(".dropdown").on("click", function () {
     var dropdownContent = $(this).find(".dropdown-content");
     $(".dropdown-content").not(dropdownContent).removeClass("show");
@@ -46,7 +52,7 @@ $(document).ready(function () {
   });
   //close promo
   $(".wrap-promo .close").click(() => {
-    $(".wrap-promo").hide();
+    $(".wrap-promo").css({"visibility":"hidden","opacity":0});
   });
   //handle tab
   $(".tab").on("click", function () {

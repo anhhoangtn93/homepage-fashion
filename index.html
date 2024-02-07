@@ -87,6 +87,7 @@
         <div class="wrap-menu">
           <div class="main-menu">
             <div id="site-nav">
+              <!-- <div class="menu_bar"><i class="fa-solid fa-bars fa-2x"></i></div> -->
               <ul class="nav">
                 <li class="dropdown-hover active dropdown">
                   <a class="menu-content" href="#"
@@ -110,7 +111,10 @@
                 </li>
                 <li class="dropdown-hover dropdown">
                   <a class="menu-content" href="#"
-                    >PRODUCT<i class="icon fkt-angle-down" aria-hidden="true"></i
+                    >PRODUCT<i
+                      class="icon fkt-angle-down"
+                      aria-hidden="true"
+                    ></i
                   ></a>
                   <div class="dropdown-content">
                     <div class="dropdown-item">SHOES</div>
@@ -136,46 +140,28 @@
                 </li>
               </ul>
             </div>
-            <div class="header__icons">
-              <div class="wrap_search">
+            <div class="header-nav-icons">
+              <div class="wrap-search">
                 <input
                   type="text"
-                  id="search_input"
+                  id="search-input"
                   placeholder="Search in..."
                 />
-                <a href="#" class="search_icon_btn">
-                  <span class="header__icons--search search_icon">
-                    <img
-                      class="svg_icon"
-                      src="./assets/images/search.svg"
-                      alt="search"
-                    />
-                  </span>
+                <a href="#" class="search-icon-btn">
+                  <i class="icon fkt-search"></i>
                 </a>
               </div>
-              <a href="#">
-                <span class="header__icons--compare icon"
-                  ><img class="svg_icon" src="./assets/images/compare.svg"
-                /></span>
+              <a class="compare-btn" href="#">
+                <i class="icon fkt-random"></i>
               </a>
 
               <a href="#">
-                <span class="header__icons--heart icon"
-                  ><img
-                    class="svg_icon"
-                    src="./assets/images/heart.svg"
-                    alt="heart"
-                  /><span class="circle"><span class="cartCount">0</span></span>
-                </span>
+                <i class="icon fkt-heart-o"></i>
+                <!-- <span class="circle"><span class="cartCount">0</span></span> -->
               </a>
               <a href="#">
-                <span class="header__icons--cart icon"
-                  ><img
-                    class="svg_icon"
-                    src="./assets/images/cart.svg"
-                    alt="cart"
-                  /><span class="circle"><span class="cartCount">0</span></span>
-                </span>
+                <i class="icon fkt-shopping-cart"></i>
+                <span class="circle"><span class="cart-count">0</span> </span>
               </a>
             </div>
           </div>

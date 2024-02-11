@@ -41,7 +41,32 @@ $(document).ready(function () {
       },
     },
   });
-  initOwlCarousel(".owl-carousel.banner", { items: 1, autoplay: false });
+  initOwlCarousel(".owl-carousel.banner", {
+    items: 1,
+    autoplay: false,
+    navText: [
+      "<i class='icon fkt-angle-left'>",
+      "<i class='icon fkt-angle-right'>",
+    ],
+    responsive: {
+      0: {
+        nav: false,
+        dots: true,
+      },
+      641: {
+        nav: false,
+        dots: true,
+      },
+      769: {
+        nav: true,
+        dots: false,
+      },
+      1025: {
+        nav: true,
+        dots: false,
+      },
+    },
+  });
   initOwlCarousel(".owl-carousel.brand", {
     nav: false,
     items: 6,

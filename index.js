@@ -17,7 +17,31 @@ $(document).ready(function () {
       )
     );
   };
-  initOwlCarousel(".owl-carousel.banner", { items: 1, autoplayTimeout: 8000 });
+  initOwlCarousel(".owl-carousel.services", {
+    loop: false,
+    nav: false,
+    autoplay: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 0,
+      },
+      641: {
+        items: 2,
+        margin: 0,
+      },
+      769: {
+        items: 3,
+        margin: 0,
+      },
+      1025: {
+        items: 4,
+        margin: 30,
+      },
+    },
+  });
+  initOwlCarousel(".owl-carousel.banner", { items: 1, autoplay: false });
   initOwlCarousel(".owl-carousel.brand", {
     nav: false,
     items: 6,
@@ -39,10 +63,11 @@ $(document).ready(function () {
     margin: 0,
     autoplay: false,
   });
-   //handle dropdown
+
+  //handle dropdown
   $(".dropdown").on("click", function () {
     let parent = $(this).parent();
-    if(parent.hasClass("dropdown-click-disable")){
+    if (parent.hasClass("dropdown-click-disable")) {
       return;
     }
     parent.addClass("dropdown-active");

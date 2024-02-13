@@ -911,6 +911,7 @@ body {
                                 font-size: 24px;
                                 margin: 0;
                                 margin-bottom: 0.5rem;
+
                                 @include res_sm {
                                     font-size: 1rem;
                                     letter-spacing: 1.6px;
@@ -1005,76 +1006,50 @@ body {
                     }
                 }
             }
-
-            .owl-nav {
-                .owl-prev {
-                    border: 0px solid black;
-
-                    span {
-                        font-size: 60px;
-                    }
-                }
-
-                .owl-next {
-                    display: block !important;
-                    border: 0px solid black;
-
-                    span {
-                        font-size: 60px;
-                    }
-                }
-
-            }
         }
     }
 
 }
 
-.slider-brand-container {
+.brand-container {
     background-color: #fafafa;
 
-    .wrap-slider-brand {
-        height: 148px;
-        max-width: 1170px;
-        width: 100%;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-height: 148px;
 
         .owl-stage-outer {
-            .owl-item {
-                .carousel-cell {
-                    padding: 0 45px;
-
-                    img {
-                        height: 148px;
-                        object-position: center center;
-                        object-fit: contain;
+            .owl-stage {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .owl-item {
+                    .carousel-cell {
+                        img {
+                            display: block;
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            user-select: none;
+                        }
                     }
                 }
             }
+
         }
 
         .owl-nav {
-            .owl-prev {
-                border: 0px solid black;
-                top: calc(50% - 30px);
-
-                span {
-                    color: #161616;
-                    font-size: 40px;
-                    font-weight: 200;
+            button {
+                .icon {
+                    font-size: 20px;
                 }
             }
 
-            .owl-next {
-                display: block !important;
-                border: 0px solid black;
-                top: calc(50% - 30px);
 
-                span {
-                    color: #161616;
-                    font-size: 40px;
-                    font-weight: 200;
-                }
-            }
 
         }
 

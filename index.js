@@ -68,9 +68,47 @@ $(document).ready(function () {
     },
   });
   initOwlCarousel(".owl-carousel.brand", {
-    nav: false,
+    nav: true,
     items: 6,
-    autoplayTimeout: 3000,
+    autoplay: false,
+    navText: [
+      "<i class='icon fkt-angle-left'>",
+      "<i class='icon fkt-angle-right'>",
+    ],
+    responsive: {
+      0: {
+        items: 2,
+        nav: false,
+        dots: false,
+      },
+      641: {
+        items: 2,
+        nav: false,
+        dots: false,
+      },
+      769: {
+        items: 3,
+        nav: false,
+        dots: false,
+      },
+      1025: {
+        items: 3,
+        nav: false,
+        dots: false,
+      },
+      1200: {
+        items: 4,
+        nav: false,
+        dots: false,
+      },
+      1440: {
+        items: 6,
+        nav: true,
+        dots: false,
+        margin: 30,
+      },
+
+    },
   });
   initOwlCarousel(".owl-carousel.four-item", {
     items: 4,

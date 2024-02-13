@@ -812,56 +812,34 @@ body {
 .slider-banner-container .wrap-slider-banner .wrap-owl-carousel .owl-stage-outer .owl-item .carousel-cell .banner-text .banner-btn:hover .icon::before {
   width: auto;
 }
-.slider-banner-container .wrap-slider-banner .wrap-owl-carousel .owl-nav .owl-prev {
-  border: 0px solid black;
-}
-.slider-banner-container .wrap-slider-banner .wrap-owl-carousel .owl-nav .owl-prev span {
-  font-size: 60px;
-}
-.slider-banner-container .wrap-slider-banner .wrap-owl-carousel .owl-nav .owl-next {
-  display: block !important;
-  border: 0px solid black;
-}
-.slider-banner-container .wrap-slider-banner .wrap-owl-carousel .owl-nav .owl-next span {
-  font-size: 60px;
-}
 
-.slider-brand-container {
+.brand-container {
   background-color: #fafafa;
 }
-.slider-brand-container .wrap-slider-brand {
-  height: 148px;
-  max-width: 1170px;
-  width: 100%;
+.brand-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 148px;
 }
-.slider-brand-container .wrap-slider-brand .owl-stage-outer .owl-item .carousel-cell {
-  padding: 0 45px;
+.brand-container .container .owl-stage-outer .owl-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slider-brand-container .wrap-slider-brand .owl-stage-outer .owl-item .carousel-cell img {
-  height: 148px;
-  -o-object-position: center center;
-     object-position: center center;
-  -o-object-fit: contain;
-     object-fit: contain;
+.brand-container .container .owl-stage-outer .owl-stage .owl-item .carousel-cell img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-.slider-brand-container .wrap-slider-brand .owl-nav .owl-prev {
-  border: 0px solid black;
-  top: calc(50% - 30px);
-}
-.slider-brand-container .wrap-slider-brand .owl-nav .owl-prev span {
-  color: #161616;
-  font-size: 40px;
-  font-weight: 200;
-}
-.slider-brand-container .wrap-slider-brand .owl-nav .owl-next {
-  display: block !important;
-  border: 0px solid black;
-  top: calc(50% - 30px);
-}
-.slider-brand-container .wrap-slider-brand .owl-nav .owl-next span {
-  color: #161616;
-  font-size: 40px;
-  font-weight: 200;
+.brand-container .container .owl-nav button .icon {
+  font-size: 20px;
 }
 
 .banners-set-container {

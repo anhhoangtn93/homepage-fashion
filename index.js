@@ -36,6 +36,10 @@ $(document).ready(function () {
         margin: 0,
       },
       1025: {
+        items: 3,
+        margin: 30,
+      },
+      1200: {
         items: 4,
         margin: 30,
       },

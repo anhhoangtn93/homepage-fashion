@@ -45,6 +45,34 @@ $(document).ready(function () {
       },
     },
   });
+  initOwlCarousel(".owl-carousel.services-bottom", {
+    loop: false,
+    nav: false,
+    autoplay: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 0,
+      },
+      641: {
+        items: 2,
+        margin: 0,
+      },
+      769: {
+        items: 2,
+        margin: 0,
+      },
+      1025: {
+        items: 3,
+        margin: 0,
+      },
+      1200: {
+        items: 3,
+        margin: 0,
+      },
+    },
+  });
   initOwlCarousel(".owl-carousel.banner", {
     items: 1,
     autoplay: false,
@@ -111,24 +139,82 @@ $(document).ready(function () {
         dots: false,
         margin: 30,
       },
-
     },
   });
   initOwlCarousel(".owl-carousel.four-item", {
-    items: 4,
     margin: 20,
+    loop: false,
     autoplay: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      641: {
+        items: 2,
+      },
+      769: {
+        items: 3,
+      },
+      1025: {
+        items: 4,
+      },
+      1200: {
+        items: 4,
+      },
+    },
   });
   initOwlCarousel(".owl-carousel.three-item", {
-    items: 3,
     margin: 20,
     autoplay: false,
+    nav: false,
+    dots: false,
+    loop:false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      641: {
+        items: 2,
+      },
+      769: {
+        items: 2,
+      },
+      1025: {
+        items: 3,
+      },
+      1200: {
+        items: 3,
+      },
+    },
   });
   initOwlCarousel(".owl-carousel.six-item", {
     loop: true,
     items: 6,
     margin: 0,
     autoplay: false,
+    loop: false,
+    nav: false,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      641: {
+        items: 2,
+      },
+      769: {
+        items: 3,
+      },
+      1025: {
+        items: 3,
+      },
+      1200: {
+        items: 4,
+      },
+      1440: {
+        items: 6,
+      },
+    },
   });
 
   //handle dropdown

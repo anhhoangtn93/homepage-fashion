@@ -203,6 +203,7 @@ body {
 }
 .wrap-header-container .container .header-content .wrap-tel .header-content-tel .tel {
   font-size: 1.6rem;
+  font-weight: 400;
   color: #999999;
   letter-spacing: -0.04rem;
 }
@@ -222,6 +223,7 @@ body {
   display: inline-block;
   height: auto;
   max-width: 27px;
+  width: 100%;
   margin-right: 5px;
 }
 .wrap-header-container .container .header-content .content-logo .logo .site-text-logo {

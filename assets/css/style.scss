@@ -266,6 +266,7 @@ $res_2xl : "only screen and (min-width: 1201px)";
 
                     .tel {
                         font-size: 1.6rem;
+                        font-weight: 400;
                         color: $color-gray;
                         letter-spacing: -0.04rem;
                     }
@@ -287,6 +288,7 @@ $res_2xl : "only screen and (min-width: 1201px)";
                         display: inline-block;
                         height: auto;
                         max-width: 27px;
+                        width: 100%;
                         margin-right: 5px;
                     }
 
